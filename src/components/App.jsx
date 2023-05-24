@@ -53,7 +53,7 @@ export const App = () => {
         fetchImages(searchImg, page)
           .then(response => {
             if (!response.ok) {
-              return Promise.reject(new Error('OOPS!'));
+              return error
             }
             return response.json();
           })
@@ -223,5 +223,7 @@ export const App = () => {
 //     );
 //   }
 // }
+
+
 
 
