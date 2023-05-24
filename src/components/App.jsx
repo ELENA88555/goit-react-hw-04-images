@@ -72,7 +72,7 @@ export const App = () => {
     };
 
     fetchNewImages();
-  }, [page, searchImg]);
+  }, [error, page, searchImg]);
 
   const handleSearchForm = searchImg => {
     setSearchImg(searchImg);
