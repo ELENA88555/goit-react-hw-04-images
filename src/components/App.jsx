@@ -78,6 +78,7 @@ export const App = () => {
     setSearchImg(searchImg);
   };
 
+  
   const toggleModal = () => {
     setShowModal(prevShowModal => !prevShowModal);
   };
