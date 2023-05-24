@@ -39,7 +39,7 @@ export const App = () => {
             setPage(1);
             setTotalImages(totalHits);
           })
-          .catch(error => setError('OOPS'))
+          .catch(error => setError(error))
           .finally(() => setLoading(false));
       }
     };
